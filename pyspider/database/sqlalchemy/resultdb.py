@@ -20,7 +20,7 @@ from .sqlalchemybase import SplitTableMixin, result2dict
 
 
 class ResultDB(SplitTableMixin, BaseResultDB):
-    __tablename__ = ''
+    __tablename__ = 'resultdb'
 
     def __init__(self, url):
         self.table = Table('__tablename__', MetaData(),

@@ -20,7 +20,7 @@ from .sqlalchemybase import SplitTableMixin, result2dict
 
 
 class TaskDB(SplitTableMixin, BaseTaskDB):
-    __tablename__ = ''
+    __tablename__ = 'taskdb'
 
     def __init__(self, url):
         self.table = Table('__tablename__', MetaData(),
