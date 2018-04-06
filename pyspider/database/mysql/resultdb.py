@@ -18,7 +18,7 @@ from .mysqlbase import MySQLMixin, SplitTableMixin
 
 
 class ResultDB(MySQLMixin, SplitTableMixin, BaseResultDB, BaseDB):
-    __tablename__ = ''
+    __tablename__ = 'resultdb'
 
     def __init__(self, host='localhost', port=3306, database='resultdb',
                  user='root', passwd=None):

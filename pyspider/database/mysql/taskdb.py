@@ -19,7 +19,7 @@ from .mysqlbase import MySQLMixin, SplitTableMixin
 
 
 class TaskDB(MySQLMixin, SplitTableMixin, BaseTaskDB, BaseDB):
-    __tablename__ = ''
+    __tablename__ = 'taskdb'
 
     def __init__(self, host='localhost', port=3306, database='taskdb',
                  user='root', passwd=None):
